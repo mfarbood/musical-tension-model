@@ -14,13 +14,16 @@ featureWeights = [2, 3, 3, 2, 1, 1] # ["Onset freq", "Melodic contour", "Loudnes
 showFigure = True
 inputFile = "midi/Brahms.mid"
 
-# Flags for deciding which features to extract from music and input into the model
+# Flags for deciding which features to extract from music and input into the model. 
+# Generally, it doesn't make much sense to include both harmony and dissonance.  
+# Recommendation: if the music is tonal, use harmony only, if not tonal, then dissonance only.
 bOnsetFreq = True
 bMelodicContour = True
 bLoudness = True
 bTempo = True
 bHarmony = True
 bDissonance = False
+
 
 # Extract the features
 features = analysis.extractFeaturesMidi(inputFile, SAMPLE_RATE, bOnsetFreq, bMelodicContour, bLoudness, bTempo, bHarmony, bDissonance)
