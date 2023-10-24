@@ -1,4 +1,4 @@
-# This is version of R. Guo's midi-miner code that is slightly modified not to work just work from the command line.  
+# This is a version of R. Guo's midi-miner code that is slightly modified to work as a library.  
 # Original code: https://github.com/ruiguo-bio/midi-miner
 # This calculates harmonic tension based on Chew's sprial array model.  Reference:
 # Guo R, Simpson I, Magnusson T, Kiefer C., Herremans D. 2020. A variational autoencoder for music generation 
