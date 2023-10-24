@@ -8,7 +8,7 @@ import tensionModel
 
 SAMPLE_RATE = 10
 
-# Original feature weights from Farbood (2012) (minus the dissonsance)
+# Original feature weights from Farbood (2012) (minus the dissonance)
 featureWeights = [2, 3, 3, 2, 1, 1] # ["Onset freq", "Melodic contour", "Loudness", "Tempo", "Harmony", "Dissonance"]
 
 showFigure = True
