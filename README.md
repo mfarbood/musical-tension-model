@@ -6,5 +6,5 @@ tensionModel.py is the implementation of the actual model. It takes as input mus
 testTensionModel.py is a sample script showing how the model can be used.  
 
 Note on feature analysis components:
-These are are somewhat preliminary. In particular, the harmonic/tonal tension component needs to be updated. Currently utilized is R. Guo's midi-miner, which produces tonal tension values based on Chew's spiral array model.
+These are are somewhat preliminary and include melodic contour analysis, loudness analysis (based on MIDI velocities), tempo analysis (based on MIDI tempo change messages), dissonance, and harmonic tension. The harmonic tension values are calculated using [Guo's midi-miner](https://github.com/ruiguo-bio/midi-miner), which produces tonal tension values based on Chew's spiral array model. The dissonance values are roughly based on [Sethares's dissonance calculations](https://sethares.engr.wisc.edu/comprog.html).
  
